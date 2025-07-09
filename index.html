@@ -3,46 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
     <title>Hello HTML335</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/csmjustyle.css">
 </head>
 
-<body>
+ <body>
     <div>
         <header>
             <h1>Hello HTML335</h1>
         </header>
         <nav>
             Navigation Area
-            <ul>
+            <ol>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact.html">Content</a></li>
                 <li><a href="https://google.com">Services</a></li>
-            </ul>
+            </ol>
         </nav>
         <div>
+            Hi
             Mian Content Area
-            <p>This is a paragraph inside the main content area.</p>
-            <h2>คณะวิทยาศาสตร์</h2>
-            <p>สาขาวิทยาการคอมพิวเตอร์</p>
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Content</a></li>
+                <li><a href="https://google.com">Services</a></li>
+            </ol>
+            <p class="csmju-text">This is a paragraph inside the main content area.</p>
+            <h2 class="csmju-text">คณะวิทยาศาสตร์</h2>
+            <p class="csmju-text">สาขาวิทยาการคอมพิวเตอร์</p>
             <img src="image/fish.jfif" alt="รูปปลา">
             <h3>ตารางรายชื่อนักศึกษา</h3>
             <table border="1">
-                  <thead>
+                <thead>
                     <tr>
-                        <th>รหัสนักศึกษา</th>
-                        <th>ชื่อ-นามสกุล</th>
-                        <th>สาขา</th>
+                        <td>รหัสนักศึกษา</td>
+                        <td>ชื่อ-นามสกุล</td>
+                        <td>สาขา</td>
                     </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>6704101335</td>
                         <td>นายธนาวัชร์ ต๊ะทอง</td>
                         <td>วิทยาการคอมพิวเตอร์</td>
                     </tr>
-                  </tbody>
+                </tbody>
             </table border>
             <div>
                 <h3>ข่าว 1</h3>
@@ -63,6 +75,6 @@
         </footer>
     </div>
 
-</body>
+ </body>
 
 </html>
