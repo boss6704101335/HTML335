@@ -44,11 +44,16 @@ footer {
     font-style: italic;
     position: relative;
     bottom: 0;
-    width: 100%;   
+    width: 100%;
 }
 
 .csmju-text {
     font-size: 1.2em;
     color: #7f4fd8;
     margin: 50px;
-} 
+}
+
+.cs-image {
+    width: 200px;
+    height: 350px;
+}
