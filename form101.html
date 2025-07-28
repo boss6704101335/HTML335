@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    
+</head>
+
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl">
+        <h1 class="text-2xl font-bold text-center mb-2">ร้านค้าขายของที่ระลึก สาขาวิทยาการคอมพิวเตอร์</h1>
+        <p class="text-center text-gray-500 mb-6">Admin สำหรับจัดเตรียมสินค้า</p>
+        <form action="" method="get" class="space-y-5">
+            <div>
+                <label class="block text-lg font-semibold mb-1" for="productsize">เสื้อ</label>
+                <label class="block text-gray-700 mb-1" for="productsize">--ขนาด</label>
+                <select name="productsize" id="productsize" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <option value="">--กรุณาเลือกขนาด--</option>
+                    <option value="xs">xs</option>
+                    <option value="s">s</option>
+                    <option value="m">m</option>
+                    <option value="l">l</option>
+                    <option value="xl">xl</option>
+                    <option value="xxl">xxl</option>
+                    <option value="3xl">3xl</option>
+                </select>
+            </div>
+            <div>
+                <span class="block text-gray-700 mb-1">สี</span>
+                <div class="flex gap-4">
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="prdcolor" value="white" class="form-radio text-blue-500">
+                        <span class="ml-2">ขาว</span>
+                    </label>
+                    <label class="inline-flex items-center"></label>
+                        <input type="radio" name="prdcolor" value="back" class="form-radio text-blue-500">
+                        <span class="ml-2">ดำ</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="prdcolor" value="blue" class="form-radio text-blue-500">
+                        <span class="ml-2">น้ำเงิน</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="prdcolor" value="gray" class="form-radio text-blue-500">
+                        <span class="ml-2">เทา</span>
+                    </label>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-gray-700 mb-1" for="price">ราคา</label>
+                    <input type="number" name="price" id="price" min="0" max="999999" step="10.00" value="0.00"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1" for="quantity">จำนวนสินค้า</label>
+                    <input type="number" name="quantity" id="quantity"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1" for="modelname">ชื่อรุ่น</label>
+                <input type="text" name="modelname" id="modelname" placeholder="ชื่อรุ่น"
+                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1" for="description">รายละเอียดสินค้า</label>
+                <textarea name="description" id="description" rows="4" placeholder="รายละเอียด" maxlength="5000"
+                    class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-gray-700 mb-1" for="startdate">วันที่ขาย (เริ่มต้น)</label>
+                    <input type="date" name="startdate" id="startdate"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+                <div>
+                    <label class="block text-gray-700 mb-1" for="enddate">วันที่ขาย (สิ้นสุด)</label>
+                    <input type="date" name="enddate" id="enddate" min="2023-10-01" max="2025-08-31"
+                        class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                </div>
+            </div>
+            <div>
+                <label class="block text-gray-700 mb-1" for="productimage">รูปสินค้า</label>
+                <input type="file" name="productimage" id="productimage" accept="image/*"
+                    class="w-full text-gray-700">
+            </div>
+            <div class="flex justify-between mt-6">
+                <input type="submit" value="บันทึก"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded shadow">
+                <input type="reset" value="ล้างข้อมูล"
+                    class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded shadow">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
